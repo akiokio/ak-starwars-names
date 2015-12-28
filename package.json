@@ -1,14 +1,15 @@
 {
   "name": "ak-starwars-names",
-  "version": "1.2.0",
+  "version": "0.0.0-semantically-released",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "test": "mocha src/index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiokio/starwars-names.git"
+    "url": "https://github.com/akiokio/ak-starwars-names.git"
   },
   "keywords": [
     "random",
@@ -18,14 +19,15 @@
   "author": "Guilherme Akio Sakae <akio.xd@gmail.com> (http://akiokio.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akiokio/starwars-names/issues"
+    "url": "https://github.com/akiokio/ak-starwars-names/issues"
   },
-  "homepage": "https://github.com/akiokio/starwars-names#readme",
+  "homepage": "https://github.com/akiokio/ak-starwars-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
     "chai": "3.4.1",
-    "mocha": "2.3.4"
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
   }
 }
